@@ -27,6 +27,12 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Header -->
+  <script src="./components/header.js"></script>
+
+  <!-- Footer -->
+  <script src="./components/footer.js"></script>
+
   <!-- =======================================================
   * Template Name: Delicious
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
@@ -38,73 +44,7 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-      <div class="logo me-auto">
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
-        <h1 class="align-middle"><a href="index.html">Sabores do Mundo</a></h1>
-      </div>
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link" href="#hero">Página inicial</a></li>
-          <li class="dropdown"><a class="scrollto active" href="#"><span>Américas</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li class="dropdown"><a href="#"><span>América do norte</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="usa.html">Estados Unidos</a></li>
-                  <li><a href="mexico.html">México</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#"><span>América central</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="bahamas.html">Bahamas</a></li>
-                  <li><a href="hawaii.html">Havaí</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#"><span>América do sul</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="argentina.html">Argentina</a></li>
-                  <li><a href="brazil.html">Brasil</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>África </span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="egypt.html">Egito</a></li>
-              <li><a href="morocco.html">Marrocos</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Ásia</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="palestine.html">Palestina</a></li>
-              <li><a href="japan.html">Japão</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Europa</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="italy.html">Itália</a></li>
-              <li><a href="france.html">França</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Oceania</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="australia.html">Austrália</a></li>
-              <li><a href="new-zealand.html">Nova Zelândia</a></li>
-
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#chefs">Equipe</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
+  <main-header></main-header>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
@@ -200,12 +140,12 @@
             </div>
           </div>
 
-          <div class="col-lg-6 menu-item filter-specialty">
+          <div class="col-lg-6 menu-item filter-salads">
             <div class="menu-content">
-              <a href="#">Buñuelo</a>
+              <a href="#">Licuados</a>
             </div>
             <div class="menu-ingredients">
-              Grilled chicken with provolone, artichoke hearts, and roasted red pesto
+              Fruta fresca, leite, iogurte natural, açúcar, gelo, canela
             </div>
           </div>
 
@@ -214,7 +154,16 @@
               <a href="#">Michelada</a>
             </div>
             <div class="menu-ingredients">
-              Fresh spinach, crisp romaine, tomatoes, and Greek olives
+              Cerveja gelada, suco de limão, molho inglês, molho de pimenta, sal, gelo, rodelas de limão
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <div class="menu-content">
+              <a href="#">Buñuelo</a>
+            </div>
+            <div class="menu-ingredients">
+              Farinha de trigo, sal, água, ovo, fermento, óleo, açúcar, casca de limão ou laranja, canela
             </div>
           </div>
 
@@ -223,16 +172,7 @@
               <a href="#">Bolo de chocolate com pimenta</a>
             </div>
             <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <div class="menu-content">
-              <a href="#">Licuados</a>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
+              Farinha de trigo, cacau, pimenta chili, canela, sal, bicarbonato de sódio, manteiga, açúcar, ovos, extrato de baunilha, leitelho (buttermilk), café forte, chocolate amargo, creme de leite, manteiga
             </div>
           </div>
 
@@ -262,7 +202,7 @@
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Licuados</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Micheladas</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Michelada</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Buñuelo</a>
@@ -326,36 +266,111 @@
               <div class="tab-pane" id="tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                    <h3>Preparação da fruta</h3>
+                    <p>Descasque e corte a fruta em pedaços pequenos. Se você estiver usando frutas com sementes, como morangos, lembre-se de retirar as sementes</p>
+                    
+                    <h3>Liquidificação</h3>
+                    <p>Coloque a fruta, o leite, o iogurte e o açúcar no liquidificador</p>
+
+                    <h3>Adicione Gelo (opcional)</h3>
+                    <p>Se você preferir seu licuado mais gelado e espesso, adicione algumas pedras de gelo ao liquidificador</p>
+
+                    <h3>Misture</h3>
+                    <p>Liquidifique todos os ingredientes até obter uma consistência suave e cremosa</p>
+
+                    <h3>Prove e ajuste o açúcar</h3>
+                    <p>Experimente o licuado e ajuste a quantidade de açúcar de acordo com suas preferências pessoais</p>
+
+                    <h3>Sirva</h3>
+                    <p>Despeje o licuado em um copo e polvilhe uma pitada de canela em pó por cima, se desejar</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-3.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/mexico-3.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
               <div class="tab-pane" id="tab-4">
                 <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
-                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                  <div class="col-lg-8 details order-2 order-lg-1"> 
+                    <h3>Preparação do copo</h3>
+                    <p>Se desejar, você pode preparar o copo antes de fazer a michelada. Passe um pedaço de limão na borda do copo e, em seguida, coloque o sal ou sal temperado em um prato raso. Vire o copo de cabeça para baixo e pressione a borda no sal para que grude na borda</p>
+
+                    <h3>Montagem da michelada</h3>
+                    <p>Em um copo grande, esprema o suco de limão</p>
+                    
+                    <h3>Adicione os molhos</h3>
+                    <p>Adicione o molho inglês e o molho de pimenta ao copo. A quantidade pode variar de acordo com suas preferências de sabor e nível de pimenta</p>
+                  
+                    <h3>Cerveja e gelo</h3>
+                    <p>Adicione a cerveja gelada ao copo. Se desejar, adicione cubos de gelo</p>
+                  
+                    <h3>Misture bem</h3>
+                    <p>Mexa bem todos os ingredientes no copo para garantir que os temperos se misturem com a cerveja</p>
+
+                    <h3>Decore e sirva</h3>
+                    <p>Decore o copo com uma rodela de limão na borda e adicione uma fatia de limão à bebida para dar um toque cítrico extra</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-4.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/mexico-4.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
               <div class="tab-pane" id="tab-5">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                    <h3>Preparação da massa</h3>
+                    <p>Em uma tigela grande, misture a farinha de trigo e o sal</p>
+                    <p>Em uma panela, aqueça o óleo escolhido até derreter</p>
+                    <p>Em outra tigela, misture a água morna, o ovo e o fermento em pó</p>
+                    <p>Adicione a mistura de água, ovo e fermento à mistura de farinha e misture bem</p>
+                    <p>Adicione a gordura derretida à massa e continue a misturar até que a massa esteja homogênea</p>
+                    <p>Amasse a massa até que ela fique suave e elástica</p>
+                    <p>Cubra a massa com um pano limpo e deixe descansar por cerca de 30 minutos</p>
+                  
+                    <h3>Preparação dos buñuelos</h3>
+                    <p>Divida a massa em pequenas porções e abra cada porção em um círculo fino, semelhante a uma tortilha</p>
+                    <p>Aqueça o óleo em uma frigideira grande a uma temperatura média-alta</p>
+                    <p>Frite cada círculo de massa no óleo quente até que fique dourado de ambos os lados, virando conforme necessário. Isso geralmente leva apenas alguns minutos por buñuelo</p>
+                    <p>Retire os buñuelos do óleo com uma escumadeira e coloque-os sobre papel absorvente para remover o excesso de óleo</p>
+                  
+                    <h3>Preparação da calda</h3>
+                    <p>Em uma panela pequena, combine o açúcar, a água, a casca de limão ou laranja e o pau de canela (se estiver usando)</p>
+                    <p>Leve a mistura ao fogo médio e cozinhe até que o açúcar se dissolva e a calda comece a engrossar ligeiramente</p>
+                    <p>Retire a casca de limão ou laranja e o pau de canela da calda</p>
+
+                    <h3>Montagem dos buñuelos</h3>
+                    <p>Mergulhe cada buñuelo na calda quente até que fique bem coberto</p>
+                    <p>Coloque os buñuelos em uma travessa e espere esfriar um pouco antes de servir</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-5.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/mexico-5.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane" id="tab-6">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Preparação do bolo</h3>
+                    <p>Pré-aqueça o forno a 180°C. Unte e enfarinhe uma forma de bolo redonda</p>
+                    <p>Em uma tigela, misture a farinha, o cacau em pó, a pimenta chili, a canela, o sal, o bicarbonato de sódio e o fermento em pó. Reserve</p>
+                    <p>Em outra tigela, bata a manteiga e o açúcar até obter uma mistura cremosa</p>
+                    <p>Adicione os ovos, um de cada vez, batendo bem após cada adição. Misture o extrato de baunilha</p>
+                    <p>Misture os ingredientes secos alternadamente com o leitelho e o café, começando e terminando com os ingredientes secos. Bata até que a massa esteja homogênea</p>
+                    <p>Despeje a massa na forma preparada e leve ao forno por aproximadamente 30-35 minutos, ou até que um palito inserido no centro saia limpo</p>
+                    <p>Deixe o bolo esfriar na forma por alguns minutos antes de desenformá-lo e deixá-lo esfriar completamente em uma grade</p>
+
+                    <h3>Preparação da cobertura de chocolate</h3>
+                    <p>Em uma panela, aqueça o creme de leite até começar a ferver</p>
+                    <p>Coloque o chocolate picado em uma tigela e despeje o creme de leite quente sobre o chocolate. Deixe repousar por um minuto e, em seguida, mexa até que o chocolate derreta e a mistura fique lisa</p>
+                    <p>Adicione a manteiga e continue mexendo até que a cobertura fique brilhante e suave</p>
+
+                    <h3>Montagem</h3>
+                    <p>Despeje a cobertura de chocolate sobre o bolo completamente resfriado</p>
+                    <p>Decore a gosto, se desejar, com pimenta chili em pó ou raspas de chocolate</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/mexico-6.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -465,79 +480,9 @@
       </div>
     </section><!-- End Events Section -->
 
-    <!-- ======= Whu Us Section ======= -->
-    <section id="why-us" class="why-us">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Why choose <span>Our Restaurant</span></h2>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4">
-            <div class="box">
-              <span>01</span>
-              <h4>Lorem Ipsum</h4>
-              <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box">
-              <span>02</span>
-              <h4>Repellat Nihil</h4>
-              <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box">
-              <span>03</span>
-              <h4> Ad ad velit qui</h4>
-              <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Whu Us Section -->
-
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="logo img-fluid"></a>
-      <h3>Sabores do Mundo</h3> -->
-
-      <div class="logo">
-        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
-        <h1><a href="index.html">Sabores do Mundo</a></h1>
-      </div>
-
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>Sabores do Mundo</span></strong>. Todos os direitos reservados
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
-        Template pela <a href="https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+  <footer-component></footer-component>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
