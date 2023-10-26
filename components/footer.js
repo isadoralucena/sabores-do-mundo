@@ -16,7 +16,7 @@ class Footer extends HTMLElement {
           <h1><a href="index.html">Sabores do Mundo</a></h1>
         </div>
   
-        <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+        <p>Explorando a pluralidade gastronômica que une e diferencia os países</p>
         <div class="social-links">
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
