@@ -1,12 +1,3 @@
-let uri = window.location.href;
-
-let base_uri = './'
-
-if (uri.includes('github.io'))
-  base_uri = 'https://isadoralucena.github.io/'
-else if (uri.includes('localhost:8000'))
-  base_uri = 'http://localhost:8000/'
-
 var simplemaps_worldmap_mapdata={
   main_settings: {
    //General settings
@@ -17,7 +8,7 @@ var simplemaps_worldmap_mapdata={
     popups: "detect",
     
     //State defaults
-    state_description: "País não desenvolvido",
+    state_description: "País ainda não explorado no site",
     state_color: "#88A4BC",
     state_hover_color: "#3B729F",
     state_url: "",
@@ -94,7 +85,7 @@ var simplemaps_worldmap_mapdata={
     AR: {
       name: "Argentina",
       description: "Conheça sua gastronomia local",
-      url: `${base_uri}argentina.html`
+      url: "argentina.html"
     },
     AM: {
       name: "Armênia"
@@ -102,7 +93,7 @@ var simplemaps_worldmap_mapdata={
     AU: {
       name: "Austrália",
       description: "Conheça sua gastronomia local",
-      url: `${base_uri}australia.html`
+      url: "australia.html"
     },
     AT: {
       name: "Áustria"
@@ -146,7 +137,7 @@ var simplemaps_worldmap_mapdata={
     BR: {
       name: "Brasil",
       description: "Conheça sua gastronomia local",
-      url: `${base_uri}brazil.html`
+      url: "brazil.html"
     },
     BN: {
       name: "Brunei Darussalam"
@@ -193,8 +184,7 @@ var simplemaps_worldmap_mapdata={
     CU: {
       name: "Cuba",
       description: "Conheça sua gastronomia local",
-      url: `${base_uri}cuba.html`
-
+      url: "cuba.html"
     },
     CZ: {
       name: "República Tcheca"
@@ -220,7 +210,7 @@ var simplemaps_worldmap_mapdata={
     EG: {
       name: "Egito",
       description: "Conheça sua gastronomia local",
-      url: `${base_uri}egypt.html`
+      url: "egypt.html"
     },
     ER: {
       name: "Eritreia"
@@ -318,7 +308,7 @@ var simplemaps_worldmap_mapdata={
     JP: {
       name: "Japão",
       description: "Conheça sua gastronomia local",
-      url: `${base_uri}japan.html`
+      url: "japan.html"
     },
     KZ: {
       name: "Cazaquistão"
@@ -371,7 +361,7 @@ var simplemaps_worldmap_mapdata={
     MA: {
       name: "Marrocos",
       description: "Conheça sua gastronomia local",
-      url: `${base_uri}morocco.html`
+      url: "morocco.html"
     },
     MD: {
       name: "Moldávia"
@@ -382,7 +372,7 @@ var simplemaps_worldmap_mapdata={
     MX: {
       name: "México",
       description: "Conheça sua gastronomia local",
-      url: `${base_uri}mexico.html`
+      url: "mexico.html"
     },
     MK: {
       name: "Macedónia do Norte"
@@ -435,7 +425,7 @@ var simplemaps_worldmap_mapdata={
     NZ: {
       name: "Nova Zelândia",
       description: "Conheça sua gastronomia local",
-      url: `${base_uri}new-zealand.html`
+      url: "new-zealand.html"
     },
     OM: {
       name: "Omã"
@@ -470,7 +460,7 @@ var simplemaps_worldmap_mapdata={
     PS: {
       name: "Palestina",
       description: "Conheça sua gastronomia local",
-      url: `${base_uri}palestine.html`
+      url: "palestine.html"
     },
     QA: {
       name: "Catar"
@@ -568,7 +558,7 @@ var simplemaps_worldmap_mapdata={
     US: {
       name: "Estados Unidos",
       description: "Conheça sua gastronomia local",
-      url: `${base_uri}usa.html`
+      url: "usa.html"
     },
     UZ: {
       name: "Uzbequistão"
@@ -603,7 +593,7 @@ var simplemaps_worldmap_mapdata={
     FR: {
       name: "França",
       description: "Conheça sua gastronomia local",
-      url: `${base_uri}france.html`
+      url: "france.html"
     },
     ES: {
       name: "Espanha"
@@ -623,7 +613,7 @@ var simplemaps_worldmap_mapdata={
     BS: {
       name: "Bahamas",
       description: "Conheça sua gastronomia local",
-      url: `${base_uri}bahamas.html`
+      url: "bahamas.html"
     },
     BM: {
       name: "Bermudas"
@@ -895,7 +885,6 @@ var simplemaps_worldmap_mapdata={
         "PL",
         "PT",
         "RO",
-        "RU",
         "SM",
         "RS",
         "SK",
@@ -935,7 +924,6 @@ var simplemaps_worldmap_mapdata={
         "PL",
         "PT",
         "RO",
-        "RU",
         "SM",
         "RS",
         "SK",
@@ -1100,6 +1088,7 @@ var simplemaps_worldmap_mapdata={
     "5": {
       name: "Ásia",
       states: [
+        "RU",
         "JO",
         "KP",
         "AE",
@@ -1131,7 +1120,6 @@ var simplemaps_worldmap_mapdata={
         "PK",
         "PH",
         "QA",
-        "RU",
         "SA",
         "LK",
         "SY",
