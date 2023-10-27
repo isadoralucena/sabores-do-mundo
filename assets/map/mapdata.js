@@ -9,8 +9,8 @@ var simplemaps_worldmap_mapdata={
     
     //State defaults
     state_description: "País ainda não explorado no site",
-    state_color: "#88A4BC",
-    state_hover_color: "#3B729F",
+    state_color: "#c0c0c0",
+    state_hover_color: "#858685",
     state_url: "",
     border_size: 1.5,
     all_states_inactive: "no",
@@ -85,7 +85,9 @@ var simplemaps_worldmap_mapdata={
     AR: {
       name: "Argentina",
       description: "Conheça sua gastronomia local",
-      url: "argentina.html"
+      url: "argentina.html",
+      color: "#ffb03b",
+      hover_color: "#ffc56e"
     },
     AM: {
       name: "Armênia"
@@ -93,7 +95,9 @@ var simplemaps_worldmap_mapdata={
     AU: {
       name: "Austrália",
       description: "Conheça sua gastronomia local",
-      url: "australia.html"
+      url: "australia.html",
+      color: "#ffb03b",
+      hover_color: "#ffc56e"
     },
     AT: {
       name: "Áustria"
@@ -137,7 +141,9 @@ var simplemaps_worldmap_mapdata={
     BR: {
       name: "Brasil",
       description: "Conheça sua gastronomia local",
-      url: "brazil.html"
+      url: "brazil.html",
+      color: "#ffb03b",
+      hover_color: "#ffc56e"
     },
     BN: {
       name: "Brunei Darussalam"
@@ -184,7 +190,9 @@ var simplemaps_worldmap_mapdata={
     CU: {
       name: "Cuba",
       description: "Conheça sua gastronomia local",
-      url: "cuba.html"
+      url: "cuba.html",
+      color: "#ffb03b",
+      hover_color: "#ffc56e"
     },
     CZ: {
       name: "República Tcheca"
@@ -210,7 +218,9 @@ var simplemaps_worldmap_mapdata={
     EG: {
       name: "Egito",
       description: "Conheça sua gastronomia local",
-      url: "egypt.html"
+      url: "egypt.html",
+      color: "#ffb03b",
+      hover_color: "#ffc56e"
     },
     ER: {
       name: "Eritreia"
@@ -297,7 +307,11 @@ var simplemaps_worldmap_mapdata={
       name: "Israel"
     },
     IT: {
-      name: "Itália"
+      name: "Itália",
+      description: "Conheça sua gastronomia local",
+      url: "italy.html",
+      color: "#ffb03b",
+      hover_color: "#ffc56e"
     },
     JM: {
       name: "Jamaica"
@@ -308,7 +322,9 @@ var simplemaps_worldmap_mapdata={
     JP: {
       name: "Japão",
       description: "Conheça sua gastronomia local",
-      url: "japan.html"
+      url: "japan.html",
+      color: "#ffb03b",
+      hover_color: "#ffc56e"
     },
     KZ: {
       name: "Cazaquistão"
@@ -361,7 +377,9 @@ var simplemaps_worldmap_mapdata={
     MA: {
       name: "Marrocos",
       description: "Conheça sua gastronomia local",
-      url: "morocco.html"
+      url: "morocco.html",
+      color: "#ffb03b",
+      hover_color: "#ffc56e"
     },
     MD: {
       name: "Moldávia"
@@ -372,7 +390,9 @@ var simplemaps_worldmap_mapdata={
     MX: {
       name: "México",
       description: "Conheça sua gastronomia local",
-      url: "mexico.html"
+      url: "mexico.html",
+      color: "#ffb03b",
+      hover_color: "#ffc56e"
     },
     MK: {
       name: "Macedónia do Norte"
@@ -425,7 +445,9 @@ var simplemaps_worldmap_mapdata={
     NZ: {
       name: "Nova Zelândia",
       description: "Conheça sua gastronomia local",
-      url: "new-zealand.html"
+      url: "new-zealand.html",
+      color: "#ffb03b",
+      hover_color: "#ffc56e"
     },
     OM: {
       name: "Omã"
@@ -460,7 +482,9 @@ var simplemaps_worldmap_mapdata={
     PS: {
       name: "Palestina",
       description: "Conheça sua gastronomia local",
-      url: "palestine.html"
+      url: "palestine.html",
+      color: "#ffb03b",
+      hover_color: "#ffc56e"
     },
     QA: {
       name: "Catar"
@@ -558,7 +582,9 @@ var simplemaps_worldmap_mapdata={
     US: {
       name: "Estados Unidos",
       description: "Conheça sua gastronomia local",
-      url: "usa.html"
+      url: "usa.html",
+      color: "#ffb03b",
+      hover_color: "#ffc56e"
     },
     UZ: {
       name: "Uzbequistão"
@@ -593,7 +619,9 @@ var simplemaps_worldmap_mapdata={
     FR: {
       name: "França",
       description: "Conheça sua gastronomia local",
-      url: "france.html"
+      url: "france.html",
+      color: "#ffb03b",
+      hover_color: "#ffc56e"
     },
     ES: {
       name: "Espanha"
@@ -613,7 +641,9 @@ var simplemaps_worldmap_mapdata={
     BS: {
       name: "Bahamas",
       description: "Conheça sua gastronomia local",
-      url: "bahamas.html"
+      url: "bahamas.html",
+      color: "#ffb03b",
+      hover_color: "#ffc56e"
     },
     BM: {
       name: "Bermudas"
@@ -937,6 +967,7 @@ var simplemaps_worldmap_mapdata={
     "3": {
       name: "África",
       states: [
+        "SZ",
         "DZ",
         "BW",
         "EH",
@@ -1088,6 +1119,7 @@ var simplemaps_worldmap_mapdata={
     "5": {
       name: "Ásia",
       states: [
+        "PS",
         "RU",
         "JO",
         "KP",
