@@ -16,9 +16,9 @@ class Header extends HTMLElement {
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
                 <li><a class="nav-link scrollto" href="index.html">Página inicial</a></li>
-                <li><a class="nav-link scrollto" href="index.html #map">Continentes</a></li>
-                <li><a class="nav-link scrollto" href="index.html #chefs">Equipe</a></li>
-                <li><a class="nav-link scrollto" href="index.html #forms">Formulário</a></li>
+                <li><a class="nav-link scrollto" href="#ingredients">Ingredientes</a></li>
+                <li><a class="nav-link scrollto" href="#preparation">Modo de preparo</a></li>
+                <li><a class="nav-link scrollto" href="#stories">Histórias</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
