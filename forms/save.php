@@ -23,24 +23,25 @@ Model::createModel(
 );
 
 if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
-    $form = new Form(
-        $_POST['age'],
-        $_POST['clear_objective'],
-        $_POST['understanding_objective'],
-        $_POST['culinary_diversity'],
-        $_POST['understandable_language'],
-        $_POST['proposal'],
-        $_POST['pleasant_visual_identity'],
-        $_POST['culinary_visual_identity'],
-        $_POST['color_pattern'],
-        $_POST['coherent_logo'],
-        $_POST['suggestion']
-    );
+    if(!empty ($_POST['understanding_objective'])){
+        $form = new Form(
+            $_POST['age'],
+            $_POST['clear_objective'],
+            $_POST['understanding_objective'],
+            $_POST['culinary_diversity'],
+            $_POST['understandable_language'],
+            $_POST['proposal'],
+            $_POST['pleasant_visual_identity'],
+            $_POST['culinary_visual_identity'],
+            $_POST['color_pattern'],
+            $_POST['coherent_logo'],
+            $_POST['suggestion']
+        );
 
-    $form->save();
+        $form->save();
 
-    header('Location: /index.html', true, 302);
+        header('Location: /index.html', true, 302);
 
-    exit;
-
+        exit;
+    }
 }

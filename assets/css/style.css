@@ -1613,3 +1613,6 @@ section {
   margin: 0;
   max-height: 70px;
 }
+#forms{
+  background-color: rgba(248, 246, 246, 0.37);
+}
